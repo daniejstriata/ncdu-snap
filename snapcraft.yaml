@@ -12,27 +12,16 @@ description: |
     
 base: core20
 grade: stable 
-confinement: strict 
+confinement: classic
 license: MIT
 
 architectures:
 - build-on: amd64
 
-plugs:
-  read-root:
-    interface: system-files
-    read:
-    - /
 
 apps:
   ncdu:
     command: usr/local/bin/ncdu
-    plugs:
-      - home
-      - removable-media
-      - mount-observe
-      - system-files
-      - read-root
 
 parts: 
   ncdu:
