@@ -18,6 +18,12 @@ license: MIT
 architectures:
 - build-on: amd64
 
+plugs:
+  read-root:
+    interface: system-files
+    read:
+    - /
+
 apps:
   ncdu:
     command: usr/local/bin/ncdu
@@ -25,8 +31,9 @@ apps:
       - home
       - removable-media
       - mount-observe
-      - system-backup # testing 
-     
+      - system-files
+      - read-root
+
 parts: 
   ncdu:
     source: https://code.blicky.net/yorhel/ncdu.git
