@@ -28,8 +28,8 @@ apps:
     plugs:
       - home
       - removable-media
-      - mount-observe
-      - system-backup
+      - mount-observe # testing
+      - system-backup # testing
 
 parts: 
   ncdu:
