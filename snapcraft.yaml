@@ -46,3 +46,6 @@ parts:
       - autoconf
       - pkg-config
       - libncurses-dev
+
+    configflags: 
+      - "--prefix=/usr"
