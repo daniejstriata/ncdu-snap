@@ -12,7 +12,7 @@ description: |
     
 base: core18
 grade: stable 
-confinement: classic
+confinement: strict
 license: MIT
 
 architectures:
@@ -30,6 +30,7 @@ apps:
       - removable-media
       - mount-observe # testing
       - system-backup # testing
+      - log-observe # testing
 
 parts: 
   ncdu:
