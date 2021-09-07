@@ -25,6 +25,7 @@ apps:
     command: ncdu
     plugs:
       - home
+      - personal-files
       - removable-media
       - mount-observe # testing
       - system-backup # testing
