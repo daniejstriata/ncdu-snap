@@ -10,7 +10,7 @@ description: |
     sudo snap connect ncdu:system-backup
     
     
-base: core20
+base: core18
 grade: stable 
 confinement: strict
 license: MIT
@@ -22,8 +22,6 @@ architectures:
 
 apps:
   ncdu:
-    aliases: 
-      - ncdu
     command: ncdu
     plugs:
       - home
@@ -46,7 +44,7 @@ parts:
       - perl
       - autoconf
       - pkg-config
-      - libncursesw5-dev
+      - libncurses-dev
 
     configflags: 
       - "--prefix=/usr"
