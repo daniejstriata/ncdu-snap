@@ -8,7 +8,7 @@ description: |
     sudo snap connect ncdu:removable-media
     sudo snap connect ncdu:mount-observe
     sudo snap connect ncdu:system-backup
-    
+    sudo snap connect ncdu:home
     
 base: core18
 grade: stable 
@@ -19,13 +19,11 @@ architectures:
 - build-on: amd64
 - build-on: i386
 
-
 apps:
   ncdu:
     command: ncdu
     plugs:
       - home
-      - personal-files
       - removable-media
       - mount-observe # testing
       - system-backup # testing
