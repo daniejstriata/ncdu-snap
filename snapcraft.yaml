@@ -10,7 +10,7 @@ description: |
     sudo snap connect ncdu:system-backup
     
     
-base: core18
+base: core20
 grade: stable 
 confinement: strict
 license: MIT
