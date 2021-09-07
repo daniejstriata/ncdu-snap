@@ -46,7 +46,7 @@ parts:
       - perl
       - autoconf
       - pkg-config
-      - libncurses-dev
+      - libncursesw5-dev
 
     configflags: 
       - "--prefix=/usr"
