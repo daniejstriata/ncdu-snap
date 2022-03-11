@@ -33,6 +33,7 @@ parts:
   ncdu:
     source: https://code.blicky.net/yorhel/ncdu.git
     source-type: git
+    source-branch: master
     plugin: autotools
     
     override-pull: |
